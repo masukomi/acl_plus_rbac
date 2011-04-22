@@ -1,0 +1,37 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+super_group:
+  id: 1
+  name: super_group
+sub_group_a:
+  id: 2
+  name: sub_group_a
+  parent_group_id: 1
+sub_group_b: 
+  id: 3
+  name: sub_group_b
+  parent_group_id: 1
+sub_group_b_sub_group: 
+  id: 4
+  name: sub_group_b_sub_group
+  parent_group_id: 3
+sysadmin_group:
+  name: Sysadmins
+  id: 5
+employees_group:
+  name: Employees
+  id: 6
+sales_group: 
+  name: Sales People
+  id: 7
+  parent_group_id: 6
+agents_group:
+  name: Agents
+  id: 8
+customers_group:
+  name: Customers
+  id: 9
+operations_group:
+  name: Operations
+  id: 10
+  parent_group_id: 6
+  

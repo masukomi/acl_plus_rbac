@@ -1,0 +1,7 @@
+--- 
+manager_person_one_to_hiring_manager_role:
+  user_id: 5
+  role_id: 8
+manager_person_one_to_manager_role:
+  user_id: 5
+  role_id: 9

@@ -1,0 +1,19 @@
+--- 
+sales_people_create_co_bridge:
+  role_id: 5
+  permission_id: 2
+management_create_users_bridge:
+  role_id: 9
+  permission_id: 3
+management_view_reports_bridge:
+  role_id: 9
+  permission_id: 4
+secretarial_role_manage_notes_bridge: 
+  role_id: 7
+  permission_id: 5
+sysadmin_role_sysadmin_permission:
+  role_id: 10
+  permission_id: 1
+operations_role: 
+  role_id: 6
+  permission_id: 6

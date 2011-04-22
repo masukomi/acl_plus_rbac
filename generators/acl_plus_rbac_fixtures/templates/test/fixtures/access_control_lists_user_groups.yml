@@ -1,0 +1,19 @@
+#people in the sales group
+# have access via ACL to the sales group object
+sales_group_acl_to_sales_group:
+  access_control_list_id: 1
+  user_group_id: 7
+#people in the operations group 
+# have access via ACL to the operations group object
+operations_group_acl_to_operations_group:
+  access_control_list_id: 2
+  user_group_id: 10
+#employess can acces the agents_group object
+agents_group_acl_to_employees_group:
+  access_control_list_id: 4
+  user_group_id: 6
+sales_person_one_acl_to_sales_group:
+  access_control_list_id: 6
+  user_group_id: 7
+
+

@@ -1,0 +1,30 @@
+--- 
+admin_to_sysadmins:
+  user_id: 1
+  user_group_id: 5
+sales_person_one_to_sales:
+  user_id: 2
+  user_group_id: 7
+sales_person_one_to_employees:
+  user_id: 2
+  user_group_id: 6
+sales_person_two_to_sales:
+  user_id: 3
+  user_group_id: 7
+sales_person_two_to_employees:
+  user_id: 3
+  user_group_id: 6
+manager_person_one_to_employees:
+  user_id: 5
+  user_group_id: 6
+manager_person_one_to_sales:
+  user_id: 5
+  user_group_id: 7
+manager_person_one_to_operations: 
+  user_id: 5
+  user_group_id: 10
+# operations person is not attached directly 
+# to employees
+operations_person_one_to_operations:
+  user_id: 4
+  user_group_id: 10

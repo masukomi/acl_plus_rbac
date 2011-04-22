@@ -1,0 +1,33 @@
+--- 
+super_group_role:
+  id: 1
+  name: super_group_role
+sub_group_a_role:
+  id: 2
+  name: sub_group_a_role
+sub_group_b_role:
+  id: 3
+  name: sub_group_b_role
+sub_group_b_sub_group_role:
+  id: 4
+  name: sub_group_b_sub_group_role
+#...more....normal ones
+sales_person_role:
+  id: 5
+  name: sales_person_role
+operations_person_role: 
+  id: 6
+  name: operations_person_role
+secretarial_role:
+  id: 7
+  name: secretarial_role
+hiring_manager_role: 
+  id: 8
+  name: hiring_manager_role
+manager_role:
+  id: 9
+  name: manager
+  access_name: managers
+sysadmin_role:
+  id: 10
+  name: sysadmin_role

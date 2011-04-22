@@ -1,0 +1,29 @@
+--- 
+#admin user only
+sysadmin_perm: 
+  name: Sysadmin
+  id: "1"
+  access_name: sysadmin
+#sales users
+create_company_perm:
+  name: Create companies
+  id: 2
+  access_name: create_companies
+#management
+create_user_perms:
+  name: Create new users
+  id: 3
+  access_name: create_new_users
+#management
+view_reports_perms:
+  name: View reports
+  id: 4
+  access_name: view_reports
+manage_notes:
+  name: Create and edit notes
+  id: 5
+  access_name: manage_notes
+operations_perm:
+  name: Do whatever it is ops people do
+  id: 6
+  access_name: operations_perm

@@ -1,0 +1,15 @@
+--- 
+admin: 
+  id: "1"
+sales_person_one:
+  id: 2
+sales_person_two:
+  id: 3
+#Ops person here is indirectly an employee
+# they're not a member of employees group 
+# but they're a member of the operations group which 
+# is a sub-group of employees
+operations_person_one:
+  id: 4
+manager_person_one:
+  id: 5

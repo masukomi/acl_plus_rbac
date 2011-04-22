@@ -1,0 +1,32 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+sales_group_acl:
+  id: 1
+  user_id: 1
+  object_id: 7
+  object_class: UserGroup 
+operations_group_acl:
+  id: 2
+  user_id: 1
+  object_id: 10
+  object_class: UserGroup
+super_group_acl: 
+  id: 3
+  user_id: 1
+  object_id: 1
+  object_class: UserGroup
+agents_group_acl: 
+  id: 4
+  user_id: 1
+  object_id: 8
+  object_class: UserGroup
+#ops person owns themself
+operations_person_one_acl:
+  id: 5
+  user_id: 4
+  object_id: 4
+  object_class: User
+sales_person_one_acl:
+  id: 6
+  user_id: 2
+  object_id: 2
+  object_class: User
