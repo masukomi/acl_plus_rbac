@@ -43,9 +43,6 @@ This doc contains:<br>
 </ul>
 <br>
 <hr style="width: 100%; height: 2px;">
-<h3>Current status</h3>
-Please note that this Rails plugin was written in 2006. It has not been tested with 
-the latest versions of Rails, but was fully functional when last released.
 <h3><a
  name="concept"></a>Concept:</h3>
 Authorization vs. Authentication<br>
@@ -440,23 +437,9 @@ If you assign a user to the "managers" group they are then
 associated with it's parent group "everyone". It's ok, but unnecessary 
 to also tie your user to the "everyone" group directly. 
 When you ask a user object if they have a Permission or a 
-Role it will traverse the heirarchy of groups and sub-groups 
+Role it will traverse the heirarchy of groups and subgroups 
 that they belong to and check all the Roles or Permissions 
 along the way.
-<br><br>
-The members of a UserGroup can be accessed in two ways:
-<div class="code"><pre>my_user_group.users #just the users directly associated with this group.
-my_user_group.all_users #the users directly associated with this group AND ALL of it's sub-groups.
-#deleting Users from UserGroups
-my_user_group.users.delete(some_user) # deletes them from this user group but not any of it's sub-groups.
-my_user_group.remove_user_completely(some_user) # deletes the user from this group and any of it's 
-	# sub-groups the user may belong to. 
-</pre></div>
-Please be aware that remove_user_completely() may have unforseen consequences in that it may 
-remove the user from a sub-group you didn't want them to be removed from. However, if you structure 
-your groups of groups sensibly this won't be a problem. If a users shouldn't be a member of the 
-outermost group there's no way they should be a member of one of the inner groups.
-
 
 <br><br>
 A useful tool in Unix based ACL systems is chown. It reassigns ownership of a 
@@ -491,7 +474,7 @@ It is distributed under the MIT license.<br>
 The remaining portions of Mitchel's code are Copyright (c) 2006
 Mitchell Hashimoto.<br>
 (xmitchx at google dot com)<br>
-Everything else is Copyright(c) 2006 Kay Rhodes <br>
+Everything else is Copyright(c) 2006 Kate Rhodes <br>
 (masukomi at masukomi dot org)<br>
 <br>
 Permission is hereby granted, free of charge, to any person obtaining a
@@ -526,7 +509,7 @@ SOFTWARE.<br>
 <hr style="width: 100%; height: 2px;">
 <h3><a
  name="help"></a>Help</h3>
-If you need help please e-mail Kay at masukomi at masukomi dot org.<br>
+If you need help please e-mail Kate at masukomi at gmail dot com.<br>
 If you have found a bug, or made an improvement, please do the same.<br>
 </body>
 </html>

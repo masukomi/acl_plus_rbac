@@ -79,7 +79,16 @@ class UserGroup < ActiveRecord::Base
 	end
 	
 	def includes_user?(user)
-	   return all_users.include?(user)
+		all_users.each do |gu|
+			return true if gu.id == user.id
+		end
+		return false
+	end
+	
+	def add_user(user)
+		if (not includes_user?(user))
+			users << user
+		end
 	end
 	
 	# returns true if this group is a child of the 
@@ -112,17 +121,17 @@ class UserGroup < ActiveRecord::Base
 
 
 	def assign_role(role)
-			return if role.nil?
-			if (role.instance_of?(String))
-				db_role = Role.find_by_access_name(role)
-				raise "Unknown Role #{role}" if db_role.nil?
-				role = db_role
-			end
-
-			if (! has_role?(role.name))
-				self.roles << role
-			end
+		return if role.nil?
+		if (role.instance_of?(String))
+			db_role = Role.find_by_access_name(role)
+			raise "Unknown Role #{role}" if db_role.nil?
+			role = db_role
 		end
+
+		if (! has_role?(role.name))
+			roles << role
+		end
+	end
 
 	# Takes an array of UserGroups and returns the subset of 
 	# that list that has the specified permission 
