@@ -22,7 +22,7 @@ However, because there's no point in authorization without authentication this p
 ## Role Based Access Control
 
 
-Role Based Access Control (wikipedia article) is a great tool but it is based on the idea that you're limiting access to 
+[Role Based Access Control](http://en.wikipedia.org/wiki/Role-based_access_control) is a great tool but it is based on the idea that you're limiting access to 
 types of things or actions not individual things. Imagine you have a system with lots of company records in it. Some people can edit them, some people can just view them, some people can't see them at all. But there's no good way to mark one of those company records as being visible/editable to a specified group of people if you're just using RBAC.
 
 A Role is equivalent to a job function. Each Role has associated permissions. A newspaper has Roles like:
@@ -37,7 +37,7 @@ The Sports Editor may also have the Role of Writer which would mean that they ge
 
 ## Access Control Lists
 
-Access Control Lists (wikipedia article) are great at limiting visibility of individual items to individuals or groups 
+[Access Control Lists](http://en.wikipedia.org/wiki/Access_control_list) are great at limiting visibility of individual items to individuals or groups 
 but are fairly restricted in their ability to control what specific people do with / to an item they have permission to see. In the \*nix world it can only control your ability to read, write, and / or execute something. If you apply this to something like a company record there's no way to indicate that a person who can see the company can't edit the company name but can edit the phone number unless every single component of that company is a separate record with separate ACLs. This could lead to a LOT of database calls.
 
 
